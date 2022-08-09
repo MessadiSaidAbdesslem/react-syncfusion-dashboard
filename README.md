@@ -37,4 +37,12 @@ in this section you can find few applications using syncfusion components as:
 - Pyramid chart
 - Stacked chart
 
-check also my portfolio [link](https://messadisaidabdesslem.github.io/).
+## Other features
+
+- Responsive with all devices
+- Light & dark mode
+- You can change theme colors from predefined palette
+
+## Contact me
+
+you will find my contact info through my portfolio [link](https://messadisaidabdesslem.github.io/).
