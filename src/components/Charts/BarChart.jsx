@@ -28,7 +28,10 @@ const BarChart = () => {
       legendSettings={{
         textStyle: { color: currentMode === "Dark" ? "white" : "gray" },
       }}
-      primaryXAxis={barPrimaryXAxis}
+      primaryXAxis={{
+        ...barPrimaryXAxis,
+        labelStyle: { color: currentMode === "Dark" ? "white" : "" },
+      }}
       primaryYAxis={barPrimaryYAxis}
       chartArea={{ border: { width: 0 } }}
       tooltip={{ enable: true }}

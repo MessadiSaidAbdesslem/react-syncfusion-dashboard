@@ -25,8 +25,14 @@ const Stacked = ({ width, height }) => {
       width={width}
       height={height}
       id="charts"
-      primaryXAxis={stackedPrimaryXAxis}
-      primaryYAxis={stackedPrimaryYAxis}
+      primaryXAxis={{
+        ...stackedPrimaryXAxis,
+        labelStyle: { color: currentMode === "Dark" ? "white" : "" },
+      }}
+      primaryYAxis={{
+        ...stackedPrimaryYAxis,
+        labelStyle: { color: currentMode === "Dark" ? "white" : "" },
+      }}
       chartArea={{
         border: {
           width: 1,

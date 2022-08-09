@@ -27,8 +27,14 @@ const AreaChart = () => {
       legendSettings={{
         textStyle: { color: currentMode === "Dark" ? "white" : "gray" },
       }}
-      primaryXAxis={areaPrimaryXAxis}
-      primaryYAxis={areaPrimaryYAxis}
+      primaryXAxis={{
+        ...areaPrimaryXAxis,
+        labelStyle: { color: currentMode === "Dark" ? "white" : "" },
+      }}
+      primaryYAxis={{
+        ...areaPrimaryYAxis,
+        labelStyle: { color: currentMode === "Dark" ? "white" : "" },
+      }}
       chartArea={{ border: { width: 0 } }}
       tooltip={{ enable: true }}
       background={currentMode === "Dark" ? "#33373E" : "#FFF"}

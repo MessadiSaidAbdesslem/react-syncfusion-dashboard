@@ -15,7 +15,7 @@ import { Header } from "../components";
 
 const Editor = () => {
   return (
-    <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl sm:p-5">
+    <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl sm:p-5 dark:bg-secondary-dark-bg">
       <Header category="App" title="Rich Text Editor" />
       <RichTextEditorComponent>
         <EditorData />

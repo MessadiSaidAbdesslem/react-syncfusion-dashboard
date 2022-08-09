@@ -27,8 +27,14 @@ const LineChart = () => {
       legendSettings={{
         textStyle: { color: currentMode === "Dark" ? "white" : "gray" },
       }}
-      primaryXAxis={LinePrimaryXAxis}
-      primaryYAxis={LinePrimaryYAxis}
+      primaryXAxis={{
+        ...LinePrimaryXAxis,
+        labelStyle: { color: currentMode === "Dark" ? "white" : "" },
+      }}
+      primaryYAxis={{
+        ...LinePrimaryYAxis,
+        labelStyle: { color: currentMode === "Dark" ? "white" : "" },
+      }}
       chartArea={{ border: { width: 0 } }}
       tooltip={{ enable: true }}
       background={currentMode === "Dark" ? "#33373E" : "#FFF"}
